@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+    margin-top: 70px;
+}
+.logo img{
+    position: relative;
+    width: 150px;
+    height: 10vh;
+    top: 10px;
+    left: 1%;
+    border: 3px solid gray;
+    background: #fff;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.row{
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.column-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.column-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.column-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    border-radius: 50px;
+}
+.Button{
+    text-decoration: none;
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.Button:hover{
+    background: #009688;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*----- Featured Categories Section -----*/
+
+.Categories{
+    margin: 70px 0;
+}
+.column-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.column-3 img{
+    width: 100%;
+}
+
+/*----- Featured Product Section -----*/
+/*----- Latest Product Section -----*/
+
+.column-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.column-4 img{
+    width: 220px;
+    height: 250px;
+}
+.column-4:hover{
+    transform: translateY(-5px);
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.column-4 p{
+    font-size: 14px;
+}
+.ratting .fa{
+    color: #ff523b;
+}
+
+/*----- Offers Section -----*/
+
+.offers{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.column-2 .offers-img{
+    padding: 50px;
+}
+small{
+    color: #555;
+}
+
+/*----- Testimonial Section -----*/
+
+.testimonial{    
+    padding-top: 100px;
+}
+.testimonial .column-3{
+    flex-basis: 22%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.testimonial .column-3{
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .column-3:hover{
+    transform: translateY(-10px);
+}
+.testimonial .column-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.fa.fa-quote-left{
+    font-size: 30px;
+    color: #ff523b;
+}
+.column-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .column-3 h3{
+    font-weight: 600;
+    color: goldenrod;
+    font-size: 16px;
+}
+
+/*----- Brand Section -----*/
+
+.brands{
+    margin: 100px auto;
+}
+.column-5{
+    width: 100px;
+}
+.column-5 img{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.column-5 img:hover{
+    filter: grayscale(0%);
+}
+
+/*----- Footer Section -----*/
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 18px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1; 
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.footer-col-3 .fa{
+    font-size: 14px;
+    margin: 15px 5px 0;
+    color: #009688;
+    cursor: pointer;
+    transition: 0.5s; 
+}
+.footer-col-3 .fa:hover{
+    background: #009688;
+    color: #fff;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+/*----- Ownner profile Section -----*/
+
+.footer hr{
+    font-size: 18px;
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.Owner{
+    text-align: center;
+}
+.Owner-Details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Owner-profile{
+    margin-top: 40px;
+    flex-basis: 30%;
+    font-size: 18px;
+    color: goldenrod;
+}
+.Owner-profile p{
+    font-size: 14px;
+    color: honeydew;
+}
+.Owner-profile p .fa{
+    font-size: 20px;
+    color: #009688;
+    margin: 10px;
+}
+.Owner-img img{
+    margin-top: 40px;
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+/*----- For Mobile Screen ( less than 800px ) -----*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*----- For Mobile Screen ( less than 600px ) -----*/
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .column-2, .column-3, .column-4{
+        flex-basis: 100%;
+    }
+    .Owner-Details{
+        flex-basis: 100%;
+    }
+    .Owner-profile h1{
+        text-align: center;
+        font-size: 14px;
+    }
+    .Owner-profile p{
+        text-align: center;
+        font-size: 12px;
+    }
+    .Owner-img img{
+        position: relative;
+        top: 100px;
+        left: -20px;
+        width: 130px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
